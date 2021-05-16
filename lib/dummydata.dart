@@ -1,5 +1,4 @@
 import 'package:news/model/news.dart';
-import 'package:news/model/user.dart';
 
 const DUMMY_NEWS = const [
   News(

@@ -26,7 +26,6 @@ class VideoNewsItem extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(3*maxh/672),
               ),
-              // padding: EdgeInsets.only(top:2,bottom: 2,right: 2),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(3*maxh/672),
                 child: Image.asset(
@@ -105,7 +104,6 @@ class VideoNewsItem extends StatelessWidget {
               ),
             ),
           )
-          // Text(DUMMY_NEWS[index].title)
         ],
       ),
     );

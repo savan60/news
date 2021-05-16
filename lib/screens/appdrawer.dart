@@ -2,16 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:news/screens/homepage/homepage.dart';
 import 'package:news/screens/UserProfile/userprofile.dart';
 import 'package:news/screens/video/video.dart';
+import 'package:news/utils/size_config.dart';
 
 class drawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // bool isauth = false;
     return LayoutBuilder(builder: (context, constraints) {
-      print("height is ${constraints.maxHeight}");
-      print("width is ${constraints.maxWidth}");
-      var maxH = constraints.maxHeight;
-      var maxW = constraints.maxWidth;
+      var maxH = SizeConfig.heightMultiplier*100;
+      var maxW = SizeConfig.widthMultiplier*100;
       return Drawer(
           child: Column(children: [
         Expanded(

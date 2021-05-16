@@ -8,14 +8,15 @@ class SizeConfig {
   static double _blockHeight = 0;
   static double heightMultiplier;
   static double widthMultiplier;
-  
 
   void init(BoxConstraints constraints) {
-    _screenWidth = constraints.maxWidth;
-    _screenHeight = constraints.maxHeight;
-    _blockWidth = _screenWidth / 100;
-    _blockHeight = _screenHeight / 100;
-    heightMultiplier = _blockHeight;
-    widthMultiplier = _blockWidth;
+    if (heightMultiplier == null) {
+      _screenWidth = constraints.maxWidth;
+      _screenHeight = constraints.maxHeight;
+      _blockWidth = _screenWidth / 100;
+      _blockHeight = _screenHeight / 100;
+      heightMultiplier = _blockHeight;
+      widthMultiplier = _blockWidth;
+    }
   }
 }

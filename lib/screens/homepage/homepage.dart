@@ -15,13 +15,12 @@ class HomePage extends StatelessWidget {
         drawer: drawer(),
         body: LayoutBuilder(builder: (context, constraints) {
           SizeConfig().init(constraints);
-          var maxH = constraints.maxHeight;
-          var maxW = constraints.maxWidth;
-
+          var maxH = SizeConfig.heightMultiplier*100;
+          var maxW =SizeConfig.widthMultiplier*100;
           return Column(
             children: [
               Expanded(
-                flex: 4,
+                flex: 3,
                 child: Container(
                   padding: EdgeInsets.only(
                       left: 8 * maxW / 360, bottom: 8 * maxW / 360),

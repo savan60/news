@@ -32,7 +32,7 @@ class NewsList extends StatelessWidget {
                         width: maxW * 0.3,
                         height: maxH * 0.3,
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(8),
+                          borderRadius: BorderRadius.circular(8*maxH/672),
                           child: Image.asset(DUMMY_NEWS[index].url,fit: BoxFit.cover,),
                         ),
                       ),
@@ -86,7 +86,7 @@ class NewsList extends StatelessWidget {
                                         ),
                                         FittedBox(
                                           child: Padding(
-                                            padding: EdgeInsets.only(left: 8.0),
+                                            padding: EdgeInsets.only(left: 8.0*maxW/360),
                                             child: Text(
                                               DUMMY_NEWS[index].date,
                                               style: TextStyle(
@@ -101,8 +101,8 @@ class NewsList extends StatelessWidget {
                                   Expanded(
                                     flex: 4,
                                     child: Container(
-                                      height: 20,
-                                      margin: EdgeInsets.only(left:2),
+                                      height: 16*maxH/672,
+                                      margin: EdgeInsets.only(left:2*maxW/360),
                                       decoration: BoxDecoration(
                                         color: Colors.deepOrangeAccent,
                                       ),
@@ -111,7 +111,8 @@ class NewsList extends StatelessWidget {
                                           "Sports",
                                           style: TextStyle(
                                             color: Colors.white,
-                                            fontWeight: FontWeight.w700,
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 12*maxH/672,
                                           ),
                                         ),
                                       ),
@@ -134,10 +135,6 @@ class NewsList extends StatelessWidget {
                   ],
                 ),
               ),
-              // Divider(
-              //   thickness: 0,
-              //   color: Colors.transparent,
-              // )
             ],
           ),
         );

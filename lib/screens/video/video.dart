@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:news/dummydata.dart';
 import 'package:news/screens/appdrawer.dart';
 import 'package:news/screens/video/videonewsitem.dart';
+import 'package:news/utils/size_config.dart';
 
 class VideoPage extends StatelessWidget {
   static final String routename = "/video-page";
@@ -15,9 +16,8 @@ class VideoPage extends StatelessWidget {
       key: _scaffoldState,
       drawer: drawer(),
       body: LayoutBuilder(builder: (context, constraints) {
-        var maxh = constraints.maxHeight;
-        var maxw = constraints.maxWidth;
-        print("video ${maxh} ${maxw}");
+        var maxh = SizeConfig.heightMultiplier*100;
+        var maxw = SizeConfig.widthMultiplier*100;
         return Column(
           children: [
             Expanded(
@@ -45,8 +45,6 @@ class VideoPage extends StatelessWidget {
                           ),
                         ),
                       ),
-
-                      // Image.asset('assets/images/Hamburger.png',height: 2,width: 2,),
                     ),
                   ),
                   Expanded(
@@ -133,7 +131,6 @@ class VideoPage extends StatelessWidget {
                           Expanded(
                             flex: 2,
                             child: Container(
-                              // padding: EdgeInsets.only(top: 10),
                               width: maxw,
                               height: 40*maxh/672,
                               decoration: BoxDecoration(
@@ -161,7 +158,6 @@ class VideoPage extends StatelessWidget {
                               ),
                             ),
                           )
-                          // Text()
                         ],
                       ),
                     ),
