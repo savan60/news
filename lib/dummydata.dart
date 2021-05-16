@@ -1,10 +1,12 @@
 import 'package:news/model/news.dart';
+import 'package:news/model/user.dart';
 
 const DUMMY_NEWS = const [
   News(
     title: "This is Heading of the related new or may be extend",
     date: "03-02-2021",
-    description: "This is Heading of the related new or may be extend,This is Heading of the related new or may be extend",
+    description:
+        "This is Heading of the related new or may be extend,This is Heading of the related new or may be extend",
     url: "assets/images/news1.jpg",
   ),
   News(
@@ -16,38 +18,44 @@ const DUMMY_NEWS = const [
   News(
     title: "This is Heading of the related new or may be extend",
     date: "03-02-2021",
-    description: "This is Heading of the related new or may be extend,This is Heading of the related new or may be extend",
+    description:
+        "This is Heading of the related new or may be extend,This is Heading of the related new or may be extend",
     url: "assets/images/news3.jpeg",
   ),
   News(
     title: "This is Heading of the related new or may be extend",
     date: "03-02-2021",
-    description: "This is Heading of the related new or may be extend,This is Heading of the related new or may be extend",
+    description:
+        "This is Heading of the related new or may be extend,This is Heading of the related new or may be extend",
     url: "assets/images/news4.jpg",
   ),
   News(
     title: "This is Heading of the related new or may be extend",
     date: "03-02-2021",
-    description: "This is Heading of the related new or may be extend,This is Heading of the related new or may be extend",
+    description:
+        "This is Heading of the related new or may be extend,This is Heading of the related new or may be extend",
     url: "assets/images/news5.jpg",
   ),
   News(
     title: "This is Heading of the related new or may be extend",
     date: "03-02-2021",
-    description: "This is Heading of the related new or may be extend,This is Heading of the related new or may be extend",
+    description:
+        "This is Heading of the related new or may be extend,This is Heading of the related new or may be extend",
     url: "assets/images/news6.jpg",
   ),
   News(
     title: "This is Heading of the related new or may be extend",
     date: "03-02-2021",
-    description: "This is Heading of the related new or may be extend,This is Heading of the related new or may be extend",
+    description:
+        "This is Heading of the related new or may be extend,This is Heading of the related new or may be extend",
     url: "assets/images/news7.jpg",
   ),
   News(
     title: "This is Heading of the related new or may be extend",
     date: "03-02-2021",
-    description: "This is Heading of the related new or may be extend,This is Heading of the related new or may be extend",
+    description:
+        "This is Heading of the related new or may be extend,This is Heading of the related new or may be extend",
     url: "assets/images/news8.jpg",
   ),
-  
 ];
+
